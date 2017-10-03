@@ -27,8 +27,7 @@ namespace XeroWebhooksReceiver.Queue
             else
             {
                 File.AppendAllLines(_filePath, new[] { data }, Encoding.UTF8);
-            }
-            
+            }            
         }
 
         public int Length()
@@ -48,7 +47,6 @@ namespace XeroWebhooksReceiver.Queue
         {
             throw new NotImplementedException();
         }
-
 
         public string Peek()
         {
